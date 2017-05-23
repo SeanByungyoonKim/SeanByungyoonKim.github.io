@@ -32,6 +32,19 @@ table {
   border-collapse: separate;
 }
 
+.prelim img {
+  height:auto;
+  width: 90%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.prelim h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
 .center img {
   height:auto;
   width: 90%;
@@ -49,7 +62,7 @@ table {
 }
 
 .center th {
-  width: 50%;
+  width: auto;
   padding-left: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
