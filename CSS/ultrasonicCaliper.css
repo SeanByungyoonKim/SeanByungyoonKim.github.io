@@ -10,6 +10,7 @@ body {
 
 h1 {
   text-align: center;
+  font-weight: bold;
 }
 
 footer {
@@ -35,6 +36,10 @@ table {
   height:auto;
   width: 90%;
   max-width: 400px;
+}
+
+.center h2 {
+  font-size: 20px;
 }
 
 .center p {

@@ -36,6 +36,11 @@ td{
   padding-bottom: 20px;
 }
 
+.row h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
 .center img {
   height:auto;
   width: 90%;
