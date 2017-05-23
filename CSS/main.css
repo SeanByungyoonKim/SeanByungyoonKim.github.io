@@ -9,12 +9,12 @@ body {
 }
 
 .footer {
-  position:absolute;
+  position:fixed;
   bottom: 0px;
-  right: 0px;
-  left: 0px;
+  height: 20px;
+  margin-top: -20px;
   text-align: center;
-  display:inline;
+  clear: both;
 }
 
 .portrait {
@@ -46,7 +46,6 @@ body {
 .navbar-wrapper .navbar .container {
   width:auto;
 }
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -90,22 +89,6 @@ body {
   margin-right: 10px;
   margin-left: 10px;
 }
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
