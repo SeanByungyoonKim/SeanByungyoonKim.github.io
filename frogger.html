@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="Images/Letter S blue.png">
 
-    <title>Sean Byungyoon Kim | Ultrasonic Caliper</title>
+    <title>Sean Byungyoon Kim | Embedded Frogger Game</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.3.7/docs/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,7 +30,7 @@
     <![endif]-->
 
     <!-- Custom styles for this template -->
-    <link href="CSS/ultrasonicCaliper.css" rel="stylesheet">
+    <link href="CSS/frogger.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -62,31 +62,34 @@
 
       </div>
       <div class="header">
-        <h1>Ultrasonic Caliper</h1>
+        <h1>Embedded Frogger Game</h1>
       </div>
       <div class="projects">
         <table class="center" width=auto border="0" cellpadding="5">
           <tr>
-            <th align="center" valign="center">
-              <img src="Project Images/Ultrasonic Caliper.jpg" alt="Balsa Truss">
-              <h2>Fully Assembled Ultrasonic Caliper</h2>
-            </th>
+            <td align="center" valign="center">
+              <img src="Project Images/Frogger Proposal.PNG" alt="Plans">
+              <h2>Preliminary Plans for Frogger</h2>
+            </td>
             <td>
-              <p>The “Ultrasonic Caliper” was created for a project for the course MTE 201 (Experimental Measurement and Statistical Analysis).
-                The objective of the project was to create a device that is able to take a measurement, such as length or temperature,
-                while also implementing a sensor into the device. Our project involved the use of an ultrasonic sensor to measure distance
-                and an Arduino to provide power for the ultrasonic sensor and to interpret the data from the ultrasonic sensor.
-                The above picture shows what the “Ultrasonic Caliper” looked like after it was completely built. </p>
-                
-              <p>The caliper functions by adjusting the wooden block so that the object being measured is wedged
-                  between the wooden block and the acrylic box. The ultrasonic sensor then sends pulses to bounce off the object.
-                  The ultrasonic sensor is able to detect the pulses that have been bounced off the object and is able to determine
-                  how far away the wedged object is from the sensor (the sensor’s location is treated as the reference point).
-                  This information is then interpreted by the Arduino’s program to convert it into a metric and imperial measurement.  </p>
+              <p>The “Embedded Frogger Game” was created for the final project of the course MTE 241 (Introduction to Computer Structures & Real-Time Systems).
+                 The objective of the project was to create a game that could be played on the Keil MCB 1700 evaluation board and implement its peripherals as
+                 part of the game while having multiple tasks simultaneously running within the game. For this project, the classic arcade game “Frogger” was
+                 recreated with for the microcontroller board.   </p>
 
-              <p>To create the acrylic box and the wooden block, the various parts were designed in AutoCAD and then created using a laser cutter.
-                The caliper was then assembled using super glue and the electrical components of the caliper were encased within the acrylic box.
-                Finally, the program for the Arduino was written in C++ and written within the native Arduino IDE. </p>
+              <p>The main objective of the game “Frogger” is to control a frog from one side of the road to the other side while avoiding various hazards on
+                the road such as cars and trucks. The objective of our “Embedded Frogger Game” is essentially the same, with the player being able to move
+                backwards, forwards and sideways on the road to avoid obstacles. To control the frog, the player utilizes the joystick on the Keil board to
+                move around and avoid the cars. If the frog ends up hitting one of the cars on the road, the player loses a life and has to start again from
+                the beginning. The player has 3 lives which is indicated by the LEDs on the board and when all 3 lives are lost, the game is over and the board
+                has to be reset if the player wants to play again. On the other hand, if the player succeeds in controlling the frog to the other side of the road,
+                the game shows a victory screen and then restarts. Finally, the player is able to adjust the difficulty of the game by adjusting the potentiometer.
+                The potentiometer is programmed to adjust the speeds of the cars on the road, making the games easier or harder depending on the speed change. </p>
+
+              <p>To create the “Embedded Frogger Game”, the project was written in C for the game to work in an embedded environment. The game also utilizes
+                  multiple tasks that makes up the game such as the task that controls the movements of the frog, the task that handles the cars on the road
+                  as they move along the screen and a task that handles the graphics of the game overall. Finally, due to academic policies, the source code
+                  for the game is not allowed to be published to the public (such as Github repos) but a preliminary design of the game can be seen to the left. </p>
             </td>
           </tr>
         </table>
