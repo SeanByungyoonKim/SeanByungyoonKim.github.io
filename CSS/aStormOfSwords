@@ -1,0 +1,154 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #black;
+  font-family: Roboto;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+blockquote {
+font-family: Georgia, serif;
+font-size: 32px;
+font-style: italic;
+width: 700px;
+/*margin: 0.25em 0;
+padding: 0.25em 40px;*/
+/*line-height: 1.45;*/
+position: center;
+/*color: #383838;*/
+text-align: center;
+}
+
+/*blockquote:before {
+display: block;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #7a7a7a;
+}*/
+
+blockquote cite {
+color: #999999;
+font-size: 20px;
+display: block;
+margin-top: 5px;
+}
+ 
+/*blockquote cite:before {
+content: "\2014 \2009";
+}*/
+
+table {
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+table.center {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+table {
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+.center img {
+  height:auto;
+  width: 90%;
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+.center p {
+  font-size: 14px;
+}
+
+.center h2 {
+  font-size: 20px;
+}
+
+.center th {
+  width: 35%;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.center td {
+  width: 65%;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.navbar-wrapper .navbar .container {
+  width:auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  text-align: center;
+  display:inline;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
